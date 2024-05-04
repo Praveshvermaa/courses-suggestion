@@ -5,7 +5,7 @@ import Login from '@/components/Login'
 import SingUp from '@/components/SingUp'
 import React, { useState } from 'react'
 
-function page() {
+function Page() {
     const [login, setlogin] = useState(true)
     return (
         <div >
@@ -23,4 +23,4 @@ function page() {
     )
 }
 
-export default page
+export default Page

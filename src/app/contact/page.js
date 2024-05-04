@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-function page() {
+function Page() {
     const form = useRef();
     const[name,setname] = useState("")
     const [email,setemail] = useState("")
@@ -63,4 +63,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
