@@ -2,6 +2,8 @@
 
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
 
 function Page() {
     const form = useRef();
@@ -42,6 +44,7 @@ function Page() {
 
     return (
         <div className=' '>
+            <div><Header/></div>
             <form ref={form} onSubmit={sendEmail} className='flex flex--wrap flex-col items-center gap-5 bg-gray-400 p-12'>
 
                 <div>  <label className='font-bold mr-1' htmlFor='to_name'>Name</label>
@@ -58,6 +61,7 @@ function Page() {
               error?<div className='text-red-500 text-xl font-semibold text-center'>*please , check your name or email again </div>:""
              }
             </form>
+            <div><Footer/></div>
            
         </div>
     )

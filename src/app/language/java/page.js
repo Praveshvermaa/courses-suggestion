@@ -7,6 +7,7 @@ import Searchbutton from '@/components/Searchbutton'
 function page() {
   return (
     <div className='bg-gray-400'>
+       <div>  <Header/></div> 
        <div><Searchbutton/></div>
      
     <h1  className='my-5 text-center text-wrap text-xl  font-bold  mt-10 pt-5'>Here are top <span className='font-bold underline text-blue-700 text-3xl'>Java courses</span>  according to our researches</h1>
@@ -40,6 +41,7 @@ function page() {
       
       
     </div>
+    <Footer/>
    
   </div>
   )

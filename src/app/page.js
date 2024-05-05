@@ -9,6 +9,8 @@ import Searchbutton from '@/components/Searchbutton'
 function Home() {
   return (
     <div>
+      
+   <div>  <Header/></div>  
     <div><Searchbutton/></div>
     
 
@@ -22,7 +24,7 @@ function Home() {
       <div className=''>
         <p className='font-bold text-xl text-white text-center underline'>DSA Courses </p>
         <img className='w-80 h-80 border-2 border-black outline-none shadow-lg rounded-lg' src="https://miro.medium.com/max/1200/1*-EFdnPuVrwUOmYte11v0OA.png" alt="image" />
-        <Link href={"/language/dsa"}
+        <Link href={"/language/DSA"}
         className='px-5 py-1 bg-blue-700 text-white shadow-lg rounded-sm'
         >Click to view DSA courses</Link>
 
@@ -76,6 +78,7 @@ function Home() {
     
 
     </div>
+    <div><Footer/></div>
    
     </div>
   )

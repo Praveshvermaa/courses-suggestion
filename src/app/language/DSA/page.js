@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import Searchbutton from '@/components/Searchbutton'
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
 
 function page() {
   return (
     <div className='bg-gray-400 flex flex-wrap flex-col' >
+       <div>  <Header/></div> 
        <div><Searchbutton/></div>
     <h1  className='my-5 text-center text-wrap text-xl  font-bold text-black'>Here are top <span className='font-bold text-3xl underline text-blue-700'>DSA courses</span> according to our researches</h1>
     <div className='flex flex-wrap justify-around bg-cover'
@@ -37,6 +40,7 @@ function page() {
       
       
     </div>
+    <div><Footer/></div>
     
   </div>
   )

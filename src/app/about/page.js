@@ -1,7 +1,11 @@
+import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
 import React from 'react'
 
 function page() {
   return (
+    <div>
+      <div><Header/></div>
     <div className='flex flex-wrap flex-row bg-gray-400 w-full my-10  justify-evenly' >
     <div className='flex flex-wrap flex-col w-full max-w-48 p-3'> 
       <h1 className='font-bold text-5xl text-center underline'>ABOUT US</h1>
@@ -12,6 +16,8 @@ function page() {
       <img className='' src="https://th.bing.com/th/id/OIP.cMDJtLWuf2Ya_k4yQH3GvQHaE8?rs=1&pid=ImgDetMain" alt="" />
     
     
+  </div>
+  <div><Footer/></div>
   </div>
   )
 }
