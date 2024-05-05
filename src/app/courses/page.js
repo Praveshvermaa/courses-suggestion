@@ -9,9 +9,7 @@ function Page() {
     const [login, setlogin] = useState(true)
     return (
         <div >
-             <div>  <Header/></div> 
-        
-           
+            <div>  <Header /> </div>
             <div className='flex bg-gray-400 flex-col flex-wrap gap-6 items-center my-auto p-6'>
                 <h1 className='font-bold text-3xl underline'>Login/singup page</h1>
                 <div>{login ? <Login /> : <SingUp />}</div>
@@ -20,7 +18,7 @@ function Page() {
             </div>
            
 
-           
+            <div><Footer /></div>
         </div>
     )
 }
