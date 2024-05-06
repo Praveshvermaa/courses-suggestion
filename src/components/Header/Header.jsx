@@ -12,11 +12,13 @@ function Header() {
  const [details,setdetails] = useState()
  useEffect(()=>{
   const user = localStorage.getItem("user")
-  if (!user && pathname=="/") {
+  if (!user ) {
     route.push("/courses")
 
     
   }
+  
+ 
   else if(user && pathname=="/courses"){
     route.push("/")
   }
@@ -41,7 +43,7 @@ function Header() {
         <div className='flex flex-wrap justify-around items-center mx-auto gap-2 max-w-3xl shadow-lg outline-none w-full hover:opacity-90 bg-gray-200 rounded-lg'>
             <div><img className='w-16 h-12 my-2' src="https://www.creativefabrica.com/wp-content/uploads/2022/07/29/PV-logo-design-Graphics-35052075-1.jpg" alt="logo" /></div>
             {
-              details?<div className='flex gap-5 md:gap-24'>
+              details?<div className='flex gap-2 md:gap-24'>
               <Link  href={"/"} 
              className='text-black font-bold hover:text-orange-500 active:text-orange-500'
               >Home
@@ -57,7 +59,7 @@ function Header() {
               >Contact
            </Link>
            <button  onClick={logouthandle} className='px-2 py-1 rounded-md border-2 border-black outline-black bg-blue-800 font-bold text-orange-400'>Logout</button>
-            </div>: <Link href={"#"} className='px-2 py-1 rounded-md border-2 border-black outline-black bg-blue-800 font-bold text-orange-400'>Login/Singup</Link>
+            </div>: <Link href={"#"} className='px-0 py-1 md:px-2 rounded-md border-2 border-black outline-black bg-blue-800 font-bold text-orange-400'>Login/Singup</Link>
             }
           
          

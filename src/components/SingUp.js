@@ -22,7 +22,7 @@ function SingUp() {
       seterror(false)
 
     }
-    let data = await fetch("http://localhost:3000/api/users", {
+    let data = await fetch("/api/users", {
       method: "Post",
       body: JSON.stringify({ username, email, password, contact })
     })
